@@ -1,0 +1,377 @@
+:root {
+    --font_titulos : "Press Start 2P";
+    --font_subtitulos: "IBM Plex Mono";
+    --navegaro-color: #5300C8;
+    --cards-color: #5D04D9;
+    --letter:#E5E5E5;
+    --border-input:#03318C;
+    --letra-input:#03318C;
+    --letra-button:#FFFFFF;
+
+}
+
+*{
+    font-family: var(--font_titulos);
+}
+
+body{
+    height: 1533px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CABECERA DE LA APLICACION */
+
+header{
+    width: 100%;
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+
+    /* border: 1px solid red; */
+    width: 1440px;
+    height: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navegaro-color);
+}
+
+nav>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav>div>span{
+    color: #FF0000;
+    font-size:24px;
+    letter-spacing: 2px;
+}
+
+nav>div>h1{
+    color: var(--letter);
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.producto_info p {
+    font-family: var(--font_subtitulos);
+}
+
+
+/* CUERPO DE LA APLICACION */
+
+main{
+    position: absolute;
+    top: 96px;
+    /* border:  1px solid red; */
+    width: 1440px;
+    padding: 40px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* gap: 0px; */
+}
+
+/* VISTA INGRESO DE PRODUCTOS */
+aside{
+    box-sizing: border-box;
+    /* border: 1px solid blue; */
+    width: 472px;
+    height: 517px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 40px;
+    align-items: center;
+    padding: 40px;
+}
+
+form>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 392px;
+    height: 58px;
+    padding: 0px;
+    /* z-index: 1; */
+    /* border: 1px solid purple; */
+}
+
+form h2 {
+    text-align: center;
+}
+form input[type=text]{
+    font-family: var(--font_subtitulos);
+    padding-left: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    font-size: 16px;
+    color: var(--letra-input);
+}
+
+form input{
+    width: 188px;
+    height: 100%;
+    border-radius: 10px;
+    font-family: var(--font_subtitulos);
+    font-size: 20px;
+    border: 3px solid var(--border-input);
+    /* z-index: 100; */
+
+}
+
+
+
+form input[type="submit"]{
+    background-color: var(--border-input);
+    color: var(--letra-button);
+    /* font-family: var(--font_subtitulos); */
+    /* z-index: 10; */
+}
+
+form input:hover{
+    background-color: #999999;
+}
+
+
+
+/* VISTA PRODUCTOS */
+
+article{
+    box-sizing: border-box;
+    /* border: 1px solid purple; */
+    width: 758px;
+    height: 1115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos_container{
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.productos_title{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid blue; */
+    height: 40px;
+
+}
+
+.productos_title>h2{
+    font-size: 24px;
+}
+
+.productos_cards{
+    display: flex;
+    /* flex-wrap: wrap; */
+    
+}
+
+.productos_cards{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+
+.productos_cards>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* border: 1px solid black; */
+    box-shadow: -13px 10px 6px 0px rgba(0,0,0,0.24);
+    overflow: scroll;
+}
+
+.productos_card{
+    /* flex-wrap: wrap; */
+    list-style: none;
+    border: 1px solid black;
+    width: 196px;
+    height: 258px;
+    border-radius: 10px;
+    margin-bottom: 105px;
+}
+
+.image_container{
+    width: 176px;
+    height: 176px;
+    margin-top: 10px;
+    
+}
+
+.producto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 258px;
+    padding: 10px;
+    border: 3px solid black;
+    background-color: var(--border-input);
+    border-radius: 10px;
+    color: var(--letter);
+}
+
+.image_container>img{
+    width: 100%;
+    height: 100%;
+    /* height: 100%; */
+    
+}
+
+.producto_info{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 70px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+    font-family: var(--font_subtitulos);
+}
+
+.producto_info>div{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.precio{
+    font-weight: 800;
+}
+
+footer{
+    width: 1440px;
+    height: 232px;
+    position: absolute;
+    top: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    background-color: var(--navegaro-color);
+}
+
+footer>div {
+    color: var(--letter);
+}
+
+footer>div>span{
+    color: red;
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+
+footer p{
+    font-family: var(--font_subtitulos);
+    font-weight: 100;
+}
+
+@media screen and (max-width: 430px) {
+
+ header {
+    /* width: 430px; */
+    
+ }  
+ nav{
+    width: 430px;
+    /* background-color:#03318C; */
+ } 
+
+main{
+    width: 430px;
+    flex-direction: column-reverse;
+    padding: 0px;
+
+}
+
+ article{
+    width: 100%;
+    /* border: 1px solid red; */
+ }
+aside{
+    width: 100%;
+    margin-bottom: 30px;
+    /* border: 1px solid purple; */
+}
+
+form>div{
+    width: 350px;
+    gap: 10px
+}
+.productos_title{
+    /* border: 1px solid purple; */
+    margin-bottom: 10px;
+}
+.productos_container{
+    width: 100%;
+    padding: 0px;
+    /* border:  1px solid red; */
+}
+.productos_cards{
+    width: 100%;
+    box-shadow: none;
+}
+
+.productos_cards ul{
+    justify-content: center;
+    width: 100%;
+    box-shadow: none;
+    /* border:  1px solid red; */
+    padding: 0px;
+}
+footer{
+    width: 100%;
+    top: 1600px;
+}
+}
+
