@@ -1,10 +1,66 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Alura Geek</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div><span>❤❤❤</span><h1>AluraGeek</h1></div>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <div class="productos_container">
+                <div class="productos_title">
+                    <h2>MIS PRODUCTOS:</h2>
+                </div>
+                <div class="productos_cards">
+                    <ul data-lista>
+                        <!-- <li class="productos_card">
+                            <div class="producto">
+                                <div class="image_container"><img src="https://s3-alpha-sig.figma.com/img/7288/617c/839c11fc3105027e126215f3647fa5b0?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZwU5QBDa5LRX3YpFCU41lBiFXkJq8Zq3g2I~lg7BlZ028lmgThnKSsyxQSJIsJWqNP-OmaCs3EQOT3d5a~OTwBhx0DPiu4nctWQ~pB8FxN4fB3Aspn9jHX-4npX7rjX~VgGyVeEVR0QSTJ5Y0~3bnxMBJaEbAZETLdTaZbASj55ANTbOLYX2vhzm4Q25hnqAK8~zr57JvSBYQmfaqesODUjJ7ZXy5sqhlZ1Bz3UigFLH~lCwAdGIhwlSRrF3UJr1qC-suD6q0emhQl1UU551IQjszi~rOXcnG~SP7sYZuHpPINK96h9rv3UK7xRzICB3F~FFE5n5-jTKNYs6tyAC0Q__" alt=""></div>
+                                <div class="producto_info">
+                                    <div><p class="titulo">StormTrooper</p></div>
+                                    <div><p class="precio">$ 125</p><img src="" alt=""></div>
+                                </div>
+                            </div>
+                        </li> -->
+                        
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <form action="" data-form>
+                <div><h2>AGREGAR PRODUCTO:</h2></div>
+                <div class="nombre"><input type="text" placeholder="nombre..." data-nombre></div>
+                <div class="precio"><input type="text" placeholder="precio..." data-precio></div>
+                <div class="imagen"><input type="text" placeholder="imagen..." data-imagen></div>
+                <div>
+                    <input type="submit" value="Enviar" data-submit>
+                    <input type="button" value="Limpiar" data-limpiar>
+                </div>
+            </form>
+        </aside>
+    </main>
     
+    <footer>
+        <div><span>❤❤❤</span>AluraGeek</div>
+        <div><p>Desarrollado por Abel Uchupe</p></div>
+        <div><p>ALURA LATAM 2024</p></div>
+    </footer>
+    <script src="./js/mostrarProductos.js" type="module"></script>
 </body>
 </html>
